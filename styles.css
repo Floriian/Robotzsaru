@@ -23,6 +23,10 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
+  	margin: 0px;
+  	padding: 0px;
+    
 }
 
 .login-form {
@@ -205,10 +209,6 @@ form[role=login] {
   .nav-side-menu .menu-list .menu-content {
     display: block;
   }
-}
-body {
-  margin: 0px;
-  padding: 0px;
 }
 
 .main{
