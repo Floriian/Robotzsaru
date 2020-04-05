@@ -1,0 +1,18 @@
+Szia.
+Látom letöltöttedf.
+Szeretném kérni,hogy ha valamit felhasználsz, azt jelezd nekem a fórumon, vagy a lovasifloriian@outlook.hu cÍmen.
+Adatbázis mellékelve. Az elérhetõségeket a sql_conf.php-ban tudod módosítani.
+Illetve ha elkezded használni írj egy emailt a lovasifloriian@outlook.hu címre
+Ez az utolsó verzió, ami publikus volt.
+
+Admini felhasználó létrehozása:
+1. keresd meg a fayrobot_users táblát.
+2. menj fel a titkosítóra(mellékelve) majd írd be a jelszót.
+3. a kapot kódot másold be a "password" oszlopba. Igen azt a hosszút.
+4. Töltsd ki minden adattal az oszlopokat, az admin egy true-false érték (boolen). Oda írj egy "1"-est,hogy admin
+   vagy.
+5. Kattints az indításra és tádááám. Meg is vagy, jelentkez be.
+Ha valami problémád van keress meg engem akárhol.
+
+Üdv.:
+Floriian

@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+		<title>FayORFK - Robotzsaru</title>
+	
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css' integrity='sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r' crossorigin='anonymous'>
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS' crossorigin='anonymous'></script>
+	
+		<!-- Egyedi CSS-->
+	
+		<link rel='stylesheet' href='css/index.css'>
+	
+		<meta charset='utf-8'>
+		<meta name='author' content='WilliamClark'>
+	
+		<nav class='navbar navbar-default navbar-fixed-top'>
+			<div class='container'>
+				<div class='navbar-header'>
+					<button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar'>
+						<span class='sr-only'>Toggle navigation</span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+					</button>
+					<a class='navbar-brand' href='robotzsaru.php'>FayORFK - Robotzsaru</a>
+					</div>
+				<div id='navbar' class='navbar-collapse collapse'>
+					<ul class='nav navbar-nav'>
+						<li><a href='robotzsaru.php'>Főoldal</a></li>
+						<li><a href='valasztas/szemely.php'>Személy</a></li>
+						<li class='active'><a href='valasztas/jarmu.php'>Jármű</a></li>
+						<li><a href='../logout.php'>Kijelentkezés</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</head>
+<body>
+	<form action='felhasznalo_add.php' method='POST'>
+		<div class='col-md-4'>
+			<br><br><br><br><br><br><br>
+			<div class='panel panel-custom'>
+			
+				<div class='panel-heading'>
+					<h4><i class='glyphicon glyphicon-user'></i>Hozzáadás</h4>
+				</div>
+				
+				<div class='panel-body'>
+					<input type='text' class='form-control' placeholder='Név' required name='hozzad_name'>
+				</div>
+				
+				<div class='panel-body'>
+					<input type='password' class='form-control' placeholder='Jelszó' required name='hozzad_pass'>
+				</div>
+				
+				<div class='panel-body'>
+					<input type='text' class='form-control' placeholder='Jelvényszám' required name='hozzad_jelvenysz'>
+				</div>
+						
+				<div class='panel-body'>
+					<select>
+						<option value='kadet'>Kadét</option>
+						<option value='ormester'>Őrmester</option>
+						<option value='torzsormester'>Törzsőrmester</option>
+						<option value='fotorzsormester'>Főtörzsőrmester</option>
+					</select>
+				</div>
+						
+				<div class='panel-footer' style='text-align:right;'>
+					<button class='btn btn-info'>Hozzáad</button>
+				</div>
+			</div>
+		</div>
+	</form>
+	<br><br><br><br><br><br><br>
+	<form action='felhasznalo_del.php' method='POST'>
+		<div class='col-md-4'>
+			<div class='panel panel-custom'>
+				<div class='panel-heading'>
+					<h4><i class='glyphicon glyphicon-user'></i>Törlés</h4>
+				</div>
+				
+				<div class='panel-body'>
+					<input type='text' class='form-control' placeholder='Jelvényszám' required name='torles_jelvenysz'>
+				</div>
+						
+				<div class='panel-footer' style='text-align:right;'>
+							<button class='btn btn-info'>Hozzáad</button>
+				</div>
+						
+			</div>
+		</div>
+	</form>
+</body>
+</html>

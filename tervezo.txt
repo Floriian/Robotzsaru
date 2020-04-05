@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<title>FayORFK - Robotzsaru</title>
+	
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css' integrity='sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r' crossorigin='anonymous'>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS' crossorigin='anonymous'></script>
+	
+	<!-- Egyedi CSS-->
+	
+	<link rel='stylesheet' href='css/index.css'>
+	
+	<meta charset='utf-8'>
+	<meta name='author' content='WilliamClark'>
+	
+	
+	<nav class='navbar navbar-default navbar-fixed-top'>
+		<div class='container'>
+			<div class='navbar-header'>
+				<a class='navbar-brand' href='#'>FayORFK - Robotzsaru</a>
+			</div>
+			<ul class='nav navbar-nav'>
+				<li><a href='../robotzsaru.php'>Főoldal</a></li>
+				<li class='active'><a href='../valasztas/szemely.php'>Személy</a></li>
+				<li><a href='#'>Jármű</a></li>
+				<li><a href='../logout.php'>Kijelentkezés</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+
+
+	
+</head>
+
+<body>
+
+<body>
+	<div class='col-md-6 col-md-offset-3' style='margin-top: 150px; margin-bottom: 99px;'>
+        <div class='customlogin'>
+			<h2 class='text-center login-title'>Körözött személy felrakása</h2>
+			<br>
+			<div class='account-wall'>
+				<form class='form-signin' action='felrak_ember.php' method='POST'>
+					<div class='input-group'>
+						<span class='input-group-addon' id='basic-addon1'><i class='glyphicon glyphicon-star-empty'> </i></span>
+						<input type='username' class='form-control' placeholder='Név' name='felrakas_nev' required autofocus>
+					</div>
+					<br>
+					<div class='input-group'>
+						<span class='input-group-addon' id='basic-addon1'><i class='glyphicon glyphicon-star-empty'> </i></span>
+						<input type='text' class='form-control' placeholder='Vád' required name='felrakas_vad'>
+					</div>
+					<br>
+					<div class='input-group'>
+						<span class='input-group-addon' id='basic-addon1'><i class='glyphicon glyphicon-star-empty'> </i></span>
+						<input type='text' class='form-control' placeholder='Személy leirás' required name='felrakas_leiras'>
+					</div>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<button class='btn btn-lg btn-info btn-block' type='submit'>Felrak!</button>
+					<br>
+					
+				</form>
+				<br>
+				<br>
+			</div>
+		</div>
+	</div>
+</body>
+
+</body>
+
+</html>
